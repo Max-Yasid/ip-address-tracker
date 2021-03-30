@@ -1,0 +1,62 @@
+.addressData-container{
+    background-color: white;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -60px;
+    height: 120px;
+    width: 1000px;
+    max-width: 92vw;
+    box-shadow: 0px 5px 5px hsl(0, 0%, 90%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.addressData{
+    font-family: 'Rubik', sans-serif;
+    padding: 15px 0px 0px 0px;
+    padding-left: 25px;
+    position: relative;
+}
+.address-data-title{
+    color: hsl(0, 0%, 59%);
+    font-size: .7em;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.address-data-content{
+    color: hsl(0, 0%, 17%);
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.address-data-right-line{
+    position: absolute;
+    right: 0;
+    top: 25px;
+    height: 70px;
+    border-right: 1px solid hsl(0, 0%, 87%);
+}
+
+@media only screen and (max-width: 770px){
+    .addressData-container{
+        height: 240px;
+        grid-template-columns: 1fr 1fr;
+        bottom: -120px;
+    }
+    .right-line-2{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .addressData-container{
+        height: 280px;
+        grid-template-columns: 1fr;
+        bottom: -140px;
+    }
+    .address-data-right-line{
+        display: none;
+    }
+    .addressData{
+        text-align: center;
+        padding: 5px 0;
+    }
+}
